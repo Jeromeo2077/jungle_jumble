@@ -1,10 +1,12 @@
 import { router } from './router-config.js';
 import { HomeController } from './controllers/HomeController.js';
+import { JungleJumblesController } from './controllers/JungleJumblesController.js';
 const USE_ROUTER = false
 
 class App {
 
   HomeController = new HomeController()
+  JungleJumblesController = new JungleJumblesController()
 
   constructor() {
     if (USE_ROUTER) {
