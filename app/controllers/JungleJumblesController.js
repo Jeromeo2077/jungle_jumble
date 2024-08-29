@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { jungleJumblesService } from "../services/JungleJumblesService.js";
 import { setHTML } from "../utils/Writer.js";
 
 export class JungleJumblesController {
@@ -19,8 +20,11 @@ export class JungleJumblesController {
 
   }
 
+
   setActiveJumble(jumbleId) {
-    console.log(jumbleId);
+    console.log('JungleJumblesController passed the active ID: ', jumbleId)
+    jungleJumblesService.setActiveJumble(jumbleId)
+
   }
 
 }
