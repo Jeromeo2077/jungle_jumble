@@ -4,7 +4,7 @@ import { setHTML } from "../utils/Writer.js";
 export class JungleJumblesController {
   constructor() {
     console.log('JungleJumblesController has loaded');
-
+    this.drawJungleJumbles()
   }
 
   drawJungleJumbles() {
