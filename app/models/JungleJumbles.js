@@ -15,7 +15,7 @@ export class JungleJumble {
 
   get ListTemplate() { // a basic list template to get drawing
     return `      
-        <div class="p-3 m-3 border border-1 border-dark shadow d-flex justify-content-around" role="button">
+        <div onclick="app.JungleJumblesController.setActiveJumble('${this.id}')"  class="p-3 m-3 border border-1 border-dark shadow d-flex justify-content-around" role="button">
           <h3>${this.difficulty}</h3>
           <p>Time: 34.3s</p>
           <p>WPM: 55.3</p>
