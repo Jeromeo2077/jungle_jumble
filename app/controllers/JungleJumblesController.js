@@ -14,6 +14,9 @@ export class JungleJumblesController {
 
     jungleJumbles.forEach(jungleJumble => jungleJumblesHTML += jungleJumble.ListTemplate)
 
-    setHTML('junglejumbleslist', jungleJumblesHTML)
+    const jungleJumbleElm = document.getElementById('junglejumbleslist')
+    jungleJumbleElm.innerHTML = jungleJumblesHTML
+
+    // setHTML('junglejumbleslist', jungleJumblesHTML)
   }
 }

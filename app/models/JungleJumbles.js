@@ -14,6 +14,12 @@ export class JungleJumble {
   }
 
   get ListTemplate() { // a basic list template to get drawing
-    return `<li>${this.name}</li>`
+    return `      
+    <div id="junglejumbleslist" class="col-5 mt-1 mx-1">
+        <div class="p-3 border border-1 border-dark">
+          <h3>Easy Jumble</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate non, porro suscipit aut temporibus vitae
+            ipsam nam incidunt iste error ex recusandae, nulla ad laudantium ullam sunt neque id doloribus.</p>
+        </div>`
   }
 }
